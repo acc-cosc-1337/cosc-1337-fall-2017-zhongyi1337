@@ -1,6 +1,4 @@
-include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
+project(test)
 
-add_executable(payrollTests payroll_test.cpp)
-
-target_link_libraries(payrollTests gtest gtest_main)
-target_link_libraries(payrollTests payroll_library)
+add_subdirectory(lib/gtest-1.7.0)
+add_subdirectory(testconfig)
