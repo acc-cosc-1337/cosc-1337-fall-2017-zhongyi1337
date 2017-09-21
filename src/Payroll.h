@@ -1,6 +1,5 @@
 #ifndef _PAYROLL_H
 #define _PAYROLL_H
-#pragma once
 #include <string>
 using namespace std;
 double ot(double hours);
