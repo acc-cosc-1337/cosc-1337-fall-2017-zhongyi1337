@@ -14,7 +14,7 @@ TEST(payroll_test, getFICASSN_test){  
 }
 
 TEST(payroll_test, getFICASSN_test){       
-    EXPECT_EQ(0, getFICASSN(0));
+    EXPECT_EQ(62, getFICASSN(1000));
 }
 
 TEST(payroll_test, grosspay_test){
@@ -22,7 +22,7 @@ TEST(payroll_test, grosspay_test){
 }
 
 TEST(payroll_test, grosspay_test){    
-    EXPECT_EQ(860,    grosspay(800, 60));
+    EXPECT_EQ(860, grosspay(800, 60));
 }
 
 
@@ -31,5 +31,5 @@ TEST(payroll_test, otpay_test){
 }
 
 TEST(payroll_test, otpay_test){     
-    EXPECT_EQ(0, otpay(0));
+    EXPECT_EQ(15, otpay(10));
 }
