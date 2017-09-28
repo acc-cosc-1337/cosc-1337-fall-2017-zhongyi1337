@@ -26,9 +26,9 @@ TEST(payroll_test, grosspay_test2){   
 
 
 TEST(payroll_test, otpay_test1){
-     EXPECT_EQ(30, otpay(20));
+     EXPECT_EQ(60, otpay(20,2));
 }
 
 TEST(payroll_test, otpay_test2){     
-    EXPECT_EQ(15, otpay(10));
+    EXPECT_EQ(45, otpay(10,3));
 }
